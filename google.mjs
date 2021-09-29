@@ -11,5 +11,7 @@ try {
     5000
   );
 } finally {
-  await driver.quit();
+  if (driver) {
+    await driver.quit();
+  }
 }
