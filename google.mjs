@@ -2,6 +2,7 @@ import "chromedriver";
 import { Builder, By, until } from "selenium-webdriver";
 import { Options } from "selenium-webdriver/chrome.js";
 const options = new Options();
+// options.addArguments("--no-sandbox");
 
 let driver;
 
