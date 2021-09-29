@@ -15,5 +15,9 @@
   },
   "scripts": {
     "test": "exit 1"
+  },
+  "dependencies": {
+    "chromedriver": "^94.0.0",
+    "selenium-webdriver": "^4.0.0-rc-1"
   }
 }
