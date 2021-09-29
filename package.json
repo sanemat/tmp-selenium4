@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/sanemat/tmp-selenium4.git"
   },
-  "author": "",
+  "author": "Matt <ogataken@gmail.com> (Sanemat) (Murahashi Kenichi)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sanemat/tmp-selenium4/issues"
