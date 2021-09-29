@@ -15,6 +15,7 @@ services:
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - SE_NODE_GRID_URL=http://localhost:4444
+      - JAVA_OPTS=-Dwebdriver.chrome.whitelistedIps=
     ports:
       - "6900:5900"
 
@@ -26,3 +27,9 @@ services:
       - "4442:4442"
       - "4443:4443"
       - "4444:4444"
+
+  app:
+    build: .
+    depends_on:
+      - chrome
+    command: ["wait-for-it", "selenium-hub:4444", "--", "node", "google.mjs"]
