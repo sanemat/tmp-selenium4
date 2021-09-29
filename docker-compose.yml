@@ -26,3 +26,9 @@ services:
       - "4442:4442"
       - "4443:4443"
       - "4444:4444"
+
+  app:
+    build: .
+    depends_on:
+      - chrome
+    command: ["wait-for-it", "selenium-hub:4444", "--", "node", "google.mjs"]
